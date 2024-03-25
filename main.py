@@ -225,9 +225,9 @@ class Summary(Plugin):
             limit = 99
             duration = -1
 
-            if "总结" in clist[0]:
+            if "总结" in clist[0] or "zj" in clist[0]:
                 flag = False
-                if clist[0] == trigger_prefix+"总结":
+                if clist[0] == trigger_prefix+"总结" or clist[0] == trigger_prefix+"zj":
                     flag = True
                     if len(clist) > 1:
                         try:
